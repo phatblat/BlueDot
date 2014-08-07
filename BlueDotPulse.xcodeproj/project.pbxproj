@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5C8C0E5199435B900DBC048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0E4199435B900DBC048 /* main.m */; };
+		B5C8C0E8199435B900DBC048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0E7199435B900DBC048 /* AppDelegate.m */; };
+		B5C8C0EB199435B900DBC048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0EA199435B900DBC048 /* ViewController.m */; };
+		B5C8C0EE199435B900DBC048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C8C0EC199435B900DBC048 /* Main.storyboard */; };
+		B5C8C0F0199435B900DBC048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C8C0EF199435B900DBC048 /* Images.xcassets */; };
+		B5C8C0FC199435B900DBC048 /* BlueDotPulseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5C8C0F6199435B900DBC048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C8C0D7199435B900DBC048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C8C0DE199435B900DBC048;
+			remoteInfo = BlueDotPulse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueDotPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C8C0E3199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C8C0E4199435B900DBC048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5C8C0E6199435B900DBC048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5C8C0E7199435B900DBC048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5C8C0E9199435B900DBC048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5C8C0EA199435B900DBC048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5C8C0ED199435B900DBC048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5C8C0EF199435B900DBC048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueDotPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C8C0FA199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueDotPulseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5C8C0DC199435B900DBC048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C8C0F2199435B900DBC048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5C8C0D6199435B900DBC048 = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0E1199435B900DBC048 /* BlueDotPulse */,
+				B5C8C0F8199435B900DBC048 /* BlueDotPulseTests */,
+				B5C8C0E0199435B900DBC048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5C8C0E0199435B900DBC048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */,
+				B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5C8C0E1199435B900DBC048 /* BlueDotPulse */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0E6199435B900DBC048 /* AppDelegate.h */,
+				B5C8C0E7199435B900DBC048 /* AppDelegate.m */,
+				B5C8C0E9199435B900DBC048 /* ViewController.h */,
+				B5C8C0EA199435B900DBC048 /* ViewController.m */,
+				B5C8C0EC199435B900DBC048 /* Main.storyboard */,
+				B5C8C0EF199435B900DBC048 /* Images.xcassets */,
+				B5C8C0E2199435B900DBC048 /* Supporting Files */,
+			);
+			path = BlueDotPulse;
+			sourceTree = "<group>";
+		};
+		B5C8C0E2199435B900DBC048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0E3199435B900DBC048 /* Info.plist */,
+				B5C8C0E4199435B900DBC048 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5C8C0F8199435B900DBC048 /* BlueDotPulseTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */,
+				B5C8C0F9199435B900DBC048 /* Supporting Files */,
+			);
+			path = BlueDotPulseTests;
+			sourceTree = "<group>";
+		};
+		B5C8C0F9199435B900DBC048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8C0FA199435B900DBC048 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5C8C0DE199435B900DBC048 /* BlueDotPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulse" */;
+			buildPhases = (
+				B5C8C0DB199435B900DBC048 /* Sources */,
+				B5C8C0DC199435B900DBC048 /* Frameworks */,
+				B5C8C0DD199435B900DBC048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueDotPulse;
+			productName = BlueDotPulse;
+			productReference = B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5C8C0F4199435B900DBC048 /* BlueDotPulseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulseTests" */;
+			buildPhases = (
+				B5C8C0F1199435B900DBC048 /* Sources */,
+				B5C8C0F2199435B900DBC048 /* Frameworks */,
+				B5C8C0F3199435B900DBC048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5C8C0F7199435B900DBC048 /* PBXTargetDependency */,
+			);
+			name = BlueDotPulseTests;
+			productName = BlueDotPulseTests;
+			productReference = B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5C8C0D7199435B900DBC048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Kaiser Permanente";
+				TargetAttributes = {
+					B5C8C0DE199435B900DBC048 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B5C8C0F4199435B900DBC048 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B5C8C0DE199435B900DBC048;
+					};
+				};
+			};
+			buildConfigurationList = B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDotPulse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5C8C0D6199435B900DBC048;
+			productRefGroup = B5C8C0E0199435B900DBC048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5C8C0DE199435B900DBC048 /* BlueDotPulse */,
+				B5C8C0F4199435B900DBC048 /* BlueDotPulseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5C8C0DD199435B900DBC048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C8C0EE199435B900DBC048 /* Main.storyboard in Resources */,
+				B5C8C0F0199435B900DBC048 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C8C0F3199435B900DBC048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5C8C0DB199435B900DBC048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C8C0EB199435B900DBC048 /* ViewController.m in Sources */,
+				B5C8C0E8199435B900DBC048 /* AppDelegate.m in Sources */,
+				B5C8C0E5199435B900DBC048 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C8C0F1199435B900DBC048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C8C0FC199435B900DBC048 /* BlueDotPulseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5C8C0F7199435B900DBC048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C8C0DE199435B900DBC048 /* BlueDotPulse */;
+			targetProxy = B5C8C0F6199435B900DBC048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5C8C0EC199435B900DBC048 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5C8C0ED199435B900DBC048 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5C8C0FD199435B900DBC048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5C8C0FE199435B900DBC048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5C8C100199435B900DBC048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BlueDotPulse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5C8C101199435B900DBC048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BlueDotPulse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B5C8C103199435B900DBC048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueDotPulseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDotPulse.app/BlueDotPulse";
+			};
+			name = Debug;
+		};
+		B5C8C104199435B900DBC048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueDotPulseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDotPulse.app/BlueDotPulse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDotPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C8C0FD199435B900DBC048 /* Debug */,
+				B5C8C0FE199435B900DBC048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C8C100199435B900DBC048 /* Debug */,
+				B5C8C101199435B900DBC048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C8C103199435B900DBC048 /* Debug */,
+				B5C8C104199435B900DBC048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5C8C0D7199435B900DBC048 /* Project object */;
+}
