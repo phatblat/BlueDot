@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
+CGFloat const DotMaxWidth = 100;
+
 @interface ViewController ()
 
 @end
@@ -19,8 +21,10 @@
 {
     [super viewDidLoad];
 
-    // http://stackoverflow.com/questions/14104727/ios-animated-pulsing-circle-like-blue-ball-on-maps#answer-14104958
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat dotCenterH = screenRect.size.width / 2;
+    CGFloat dotCenterV = screenRect.size.height / 2;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotMaxWidth / 2, dotCenterV - DotMaxWidth / 2, DotMaxWidth, DotMaxWidth)];
     view.backgroundColor = [UIColor blueColor];
     view.layer.cornerRadius = 50;
 
