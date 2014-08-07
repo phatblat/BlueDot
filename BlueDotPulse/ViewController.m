@@ -25,17 +25,17 @@ CGFloat const DotMaxWidth = 100;
     CGFloat dotCenterH = screenRect.size.width / 2;
     CGFloat dotCenterV = screenRect.size.height / 2;
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotMaxWidth / 2, dotCenterV - DotMaxWidth / 2, DotMaxWidth, DotMaxWidth)];
-    view.backgroundColor = [UIColor blueColor];
+    view.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
     view.layer.cornerRadius = 50;
 
     [self.view addSubview:view];
 
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    scaleAnimation.duration = 0.2;
+    scaleAnimation.duration = 1.0;
     scaleAnimation.repeatCount = HUGE_VAL;
-    scaleAnimation.autoreverses = YES;
-    scaleAnimation.fromValue = [NSNumber numberWithFloat:1.2];
-    scaleAnimation.toValue = [NSNumber numberWithFloat:0.8];
+//    scaleAnimation.autoreverses = YES;
+    scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
+    scaleAnimation.toValue = [NSNumber numberWithFloat:1.2];
 
     [view.layer addAnimation:scaleAnimation forKey:@"scale"];
 }
