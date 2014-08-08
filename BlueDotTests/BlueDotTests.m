@@ -1,6 +1,6 @@
 //
-//  BlueDotPulseTests.m
-//  BlueDotPulseTests
+//  BlueDotTests.m
+//  BlueDotTests
 //
 //  Created by Ben Chatelain on 8/7/14.
 //  Copyright (c) 2014 Kaiser Permanente. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface BlueDotPulseTests : XCTestCase
+@interface BlueDotTests : XCTestCase
 
 @end
 
-@implementation BlueDotPulseTests
+@implementation BlueDotTests
 
 - (void)setUp {
     [super setUp];

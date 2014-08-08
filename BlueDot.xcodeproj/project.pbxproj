@@ -12,7 +12,7 @@
 		B5C8C0EB199435B900DBC048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0EA199435B900DBC048 /* ViewController.m */; };
 		B5C8C0EE199435B900DBC048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C8C0EC199435B900DBC048 /* Main.storyboard */; };
 		B5C8C0F0199435B900DBC048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C8C0EF199435B900DBC048 /* Images.xcassets */; };
-		B5C8C0FC199435B900DBC048 /* BlueDotPulseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */; };
+		B5C8C0FC199435B900DBC048 /* BlueDotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8C0FB199435B900DBC048 /* BlueDotTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,12 +21,12 @@
 			containerPortal = B5C8C0D7199435B900DBC048 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5C8C0DE199435B900DBC048;
-			remoteInfo = BlueDotPulse;
+			remoteInfo = BlueDot;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueDotPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C8C0DF199435B900DBC048 /* BlueDot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueDot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C8C0E3199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C8C0E4199435B900DBC048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5C8C0E6199435B900DBC048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,9 +35,9 @@
 		B5C8C0EA199435B900DBC048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B5C8C0ED199435B900DBC048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5C8C0EF199435B900DBC048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueDotPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C8C0F5199435B900DBC048 /* BlueDotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueDotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C8C0FA199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueDotPulseTests.m; sourceTree = "<group>"; };
+		B5C8C0FB199435B900DBC048 /* BlueDotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueDotTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 		B5C8C0D6199435B900DBC048 = {
 			isa = PBXGroup;
 			children = (
-				B5C8C0E1199435B900DBC048 /* BlueDotPulse */,
-				B5C8C0F8199435B900DBC048 /* BlueDotPulseTests */,
+				B5C8C0E1199435B900DBC048 /* BlueDot */,
+				B5C8C0F8199435B900DBC048 /* BlueDotTests */,
 				B5C8C0E0199435B900DBC048 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 		B5C8C0E0199435B900DBC048 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */,
-				B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */,
+				B5C8C0DF199435B900DBC048 /* BlueDot.app */,
+				B5C8C0F5199435B900DBC048 /* BlueDotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5C8C0E1199435B900DBC048 /* BlueDotPulse */ = {
+		B5C8C0E1199435B900DBC048 /* BlueDot */ = {
 			isa = PBXGroup;
 			children = (
 				B5C8C0E6199435B900DBC048 /* AppDelegate.h */,
@@ -87,7 +87,7 @@
 				B5C8C0EF199435B900DBC048 /* Images.xcassets */,
 				B5C8C0E2199435B900DBC048 /* Supporting Files */,
 			);
-			path = BlueDotPulse;
+			path = BlueDot;
 			sourceTree = "<group>";
 		};
 		B5C8C0E2199435B900DBC048 /* Supporting Files */ = {
@@ -99,13 +99,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5C8C0F8199435B900DBC048 /* BlueDotPulseTests */ = {
+		B5C8C0F8199435B900DBC048 /* BlueDotTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5C8C0FB199435B900DBC048 /* BlueDotPulseTests.m */,
+				B5C8C0FB199435B900DBC048 /* BlueDotTests.m */,
 				B5C8C0F9199435B900DBC048 /* Supporting Files */,
 			);
-			path = BlueDotPulseTests;
+			path = BlueDotTests;
 			sourceTree = "<group>";
 		};
 		B5C8C0F9199435B900DBC048 /* Supporting Files */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5C8C0DE199435B900DBC048 /* BlueDotPulse */ = {
+		B5C8C0DE199435B900DBC048 /* BlueDot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulse" */;
+			buildConfigurationList = B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDot" */;
 			buildPhases = (
 				B5C8C0DB199435B900DBC048 /* Sources */,
 				B5C8C0DC199435B900DBC048 /* Frameworks */,
@@ -131,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = BlueDotPulse;
-			productName = BlueDotPulse;
-			productReference = B5C8C0DF199435B900DBC048 /* BlueDotPulse.app */;
+			name = BlueDot;
+			productName = BlueDot;
+			productReference = B5C8C0DF199435B900DBC048 /* BlueDot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5C8C0F4199435B900DBC048 /* BlueDotPulseTests */ = {
+		B5C8C0F4199435B900DBC048 /* BlueDotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulseTests" */;
+			buildConfigurationList = B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotTests" */;
 			buildPhases = (
 				B5C8C0F1199435B900DBC048 /* Sources */,
 				B5C8C0F2199435B900DBC048 /* Frameworks */,
@@ -149,9 +149,9 @@
 			dependencies = (
 				B5C8C0F7199435B900DBC048 /* PBXTargetDependency */,
 			);
-			name = BlueDotPulseTests;
-			productName = BlueDotPulseTests;
-			productReference = B5C8C0F5199435B900DBC048 /* BlueDotPulseTests.xctest */;
+			name = BlueDotTests;
+			productName = BlueDotTests;
+			productReference = B5C8C0F5199435B900DBC048 /* BlueDotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDotPulse" */;
+			buildConfigurationList = B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -185,8 +185,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5C8C0DE199435B900DBC048 /* BlueDotPulse */,
-				B5C8C0F4199435B900DBC048 /* BlueDotPulseTests */,
+				B5C8C0DE199435B900DBC048 /* BlueDot */,
+				B5C8C0F4199435B900DBC048 /* BlueDotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C8C0FC199435B900DBC048 /* BlueDotPulseTests.m in Sources */,
+				B5C8C0FC199435B900DBC048 /* BlueDotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		B5C8C0F7199435B900DBC048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5C8C0DE199435B900DBC048 /* BlueDotPulse */;
+			target = B5C8C0DE199435B900DBC048 /* BlueDot */;
 			targetProxy = B5C8C0F6199435B900DBC048 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -332,9 +332,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = BlueDotPulse/Info.plist;
+				INFOPLIST_FILE = BlueDot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BlueDot;
 			};
 			name = Debug;
 		};
@@ -343,9 +343,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = BlueDotPulse/Info.plist;
+				INFOPLIST_FILE = BlueDot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BlueDot;
 			};
 			name = Release;
 		};
@@ -361,10 +361,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BlueDotPulseTests/Info.plist;
+				INFOPLIST_FILE = BlueDotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDotPulse.app/BlueDotPulse";
+				PRODUCT_NAME = BlueDotTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDot.app/BlueDot";
 			};
 			name = Debug;
 		};
@@ -376,17 +376,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BlueDotPulseTests/Info.plist;
+				INFOPLIST_FILE = BlueDotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDotPulse.app/BlueDotPulse";
+				PRODUCT_NAME = BlueDotTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueDot.app/BlueDot";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDotPulse" */ = {
+		B5C8C0DA199435B900DBC048 /* Build configuration list for PBXProject "BlueDot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5C8C0FD199435B900DBC048 /* Debug */,
@@ -395,21 +395,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulse" */ = {
+		B5C8C0FF199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5C8C100199435B900DBC048 /* Debug */,
 				B5C8C101199435B900DBC048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotPulseTests" */ = {
+		B5C8C102199435B900DBC048 /* Build configuration list for PBXNativeTarget "BlueDotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5C8C103199435B900DBC048 /* Debug */,
 				B5C8C104199435B900DBC048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
