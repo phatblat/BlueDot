@@ -26,11 +26,11 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     CGFloat dotCenterH = screenRect.size.width / 2;
     CGFloat dotCenterV = screenRect.size.height / 2;
 
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
-    view.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
-    view.layer.cornerRadius = DotHalfWidth;
+    UIView *pulseDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
+    pulseDisc.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
+    pulseDisc.layer.cornerRadius = DotHalfWidth;
 
-    [self.view addSubview:view];
+    [self.view addSubview:pulseDisc];
 
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.duration = 3.0;
@@ -39,7 +39,7 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
     scaleAnimation.toValue = [NSNumber numberWithFloat:1.2];
 
-    [view.layer addAnimation:scaleAnimation forKey:@"scale"];
+    [pulseDisc.layer addAnimation:scaleAnimation forKey:@"scale"];
 }
 
 @end
