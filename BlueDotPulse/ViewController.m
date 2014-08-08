@@ -35,11 +35,18 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.duration = 3.0;
     scaleAnimation.repeatCount = HUGE_VAL;
-//    scaleAnimation.autoreverses = YES;
+    //    scaleAnimation.autoreverses = YES;
     scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
     scaleAnimation.toValue = [NSNumber numberWithFloat:1.2];
-
     [pulseDisc.layer addAnimation:scaleAnimation forKey:@"scale"];
+
+    CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnimation.duration = 3.0;
+    fadeAnimation.repeatCount = HUGE_VAL;
+    //    fadeAnimation.autoreverses = YES;
+    fadeAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+    fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
+    [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
 }
 
 @end
