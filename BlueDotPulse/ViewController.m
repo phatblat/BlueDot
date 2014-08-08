@@ -11,6 +11,8 @@
 
 CGFloat const DotMaxWidth = 100;
 CGFloat const DotHalfWidth = DotMaxWidth / 2;
+CGFloat const WhiteDiscWidth = 30;
+CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
 
 @interface ViewController ()
 
@@ -26,6 +28,7 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     CGFloat dotCenterH = screenRect.size.width / 2;
     CGFloat dotCenterV = screenRect.size.height / 2;
 
+    // Blue pulsing disc
     UIView *pulseDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
     pulseDisc.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
     pulseDisc.layer.cornerRadius = DotHalfWidth;
@@ -47,6 +50,17 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     fadeAnimation.fromValue = [NSNumber numberWithFloat:1.0];
     fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
     [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
+
+    // White middle disc
+    UIView *whiteDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - WhiteDiscHalfWidth, dotCenterV - WhiteDiscHalfWidth, WhiteDiscWidth, WhiteDiscWidth)];
+    whiteDisc.backgroundColor = [UIColor whiteColor];
+    whiteDisc.layer.cornerRadius = WhiteDiscHalfWidth;
+    whiteDisc.layer.shadowColor = [UIColor blackColor].CGColor;
+    whiteDisc.layer.shadowOffset = CGSizeZero;
+    whiteDisc.layer.shadowRadius = 5.0;
+    whiteDisc.layer.shadowOpacity = 0.5;
+
+    [self.view addSubview:whiteDisc];
 }
 
 @end
