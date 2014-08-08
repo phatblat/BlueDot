@@ -33,7 +33,7 @@ CGFloat const DotHalfWidth = DotMaxWidth / 2;
     [self.view addSubview:view];
 
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    scaleAnimation.duration = 1.0;
+    scaleAnimation.duration = 3.0;
     scaleAnimation.repeatCount = HUGE_VAL;
 //    scaleAnimation.autoreverses = YES;
     scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
