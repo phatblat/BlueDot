@@ -13,6 +13,8 @@ CGFloat const DotMaxWidth = 100;
 CGFloat const DotHalfWidth = DotMaxWidth / 2;
 CGFloat const WhiteDiscWidth = 30;
 CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
+CGFloat const BlueDotMaxWidth = 20;
+CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
 
 @interface ViewController ()
 
@@ -30,26 +32,26 @@ CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
 
     // Blue pulsing disc
     UIView *pulseDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
-    pulseDisc.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
+    pulseDisc.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
     pulseDisc.layer.cornerRadius = DotHalfWidth;
-
-    [self.view addSubview:pulseDisc];
 
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.duration = 3.0;
     scaleAnimation.repeatCount = HUGE_VAL;
     //    scaleAnimation.autoreverses = YES;
-    scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
-    scaleAnimation.toValue = [NSNumber numberWithFloat:1.2];
+    scaleAnimation.fromValue = [NSNumber numberWithFloat:0.3];
+    scaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
     [pulseDisc.layer addAnimation:scaleAnimation forKey:@"scale"];
 
     CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeAnimation.duration = 3.0;
     fadeAnimation.repeatCount = HUGE_VAL;
     //    fadeAnimation.autoreverses = YES;
-    fadeAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+    fadeAnimation.fromValue = [NSNumber numberWithFloat:0.8];
     fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
     [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
+
+    [self.view addSubview:pulseDisc];
 
     // White middle disc
     UIView *whiteDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - WhiteDiscHalfWidth, dotCenterV - WhiteDiscHalfWidth, WhiteDiscWidth, WhiteDiscWidth)];
@@ -61,6 +63,13 @@ CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
     whiteDisc.layer.shadowOpacity = 0.5;
 
     [self.view addSubview:whiteDisc];
+
+    // Blue dot
+    UIView *blueDot = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - BlueDotHalfWidth, dotCenterV - BlueDotHalfWidth, BlueDotMaxWidth, BlueDotMaxWidth)];
+    blueDot.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
+    blueDot.layer.cornerRadius = BlueDotHalfWidth;
+
+    [self.view addSubview:blueDot];
 }
 
 @end
