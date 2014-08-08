@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 CGFloat const DotMaxWidth = 100;
+CGFloat const DotHalfWidth = DotMaxWidth / 2;
 
 @interface ViewController ()
 
@@ -24,9 +25,10 @@ CGFloat const DotMaxWidth = 100;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat dotCenterH = screenRect.size.width / 2;
     CGFloat dotCenterV = screenRect.size.height / 2;
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotMaxWidth / 2, dotCenterV - DotMaxWidth / 2, DotMaxWidth, DotMaxWidth)];
+
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
     view.backgroundColor = [UIColor colorWithRed:0.13 green:0.75 blue:0.97 alpha:1];
-    view.layer.cornerRadius = 50;
+    view.layer.cornerRadius = DotHalfWidth;
 
     [self.view addSubview:view];
 
