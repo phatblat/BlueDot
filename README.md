@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/BlueDot.svg?style=flat)](http://cocoadocs.org/docsets/BlueDot)
 [![Platform](https://img.shields.io/cocoapods/p/BlueDot.svg?style=flat)](http://cocoadocs.org/docsets/BlueDot)
 
+A self-animating view that mimics the current location dot in the iOS Maps app.
+
+![blue dot animation](https://imgflip.com/gif/azwxh "Logo Title Text 1")
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -25,4 +29,3 @@ Ben Chatelain, benchatelain@gmail.com
 ## License
 
 BlueDot is available under the MIT license. See the LICENSE file for more info.
-
