@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoO-qf-1O6" customClass="PBBlueDotView">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6rS-Ij-kR4"/>
-                                    <constraint firstAttribute="width" constant="100" id="RgP-99-fHi"/>
+                                    <constraint firstAttribute="height" constant="200" id="6rS-Ij-kR4"/>
+                                    <constraint firstAttribute="width" constant="200" id="RgP-99-fHi"/>
                                 </constraints>
                             </view>
                         </subviews>

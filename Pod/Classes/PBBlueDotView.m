@@ -27,52 +27,20 @@
 #import "PBBlueDotView.h"
 #import <QuartzCore/QuartzCore.h>
 
-CGFloat const DotMaxWidth = 100;
-CGFloat const DotHalfWidth = DotMaxWidth / 2;
-CGFloat const WhiteDiscWidth = 30;
-CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
-CGFloat const BlueDotMaxWidth = 20;
-CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
-
 @implementation PBBlueDotView
-
-#pragma mark - NSObject <NSCoder>
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    if (self = [super initWithCoder:coder]) {
-        [self initPrivate];
-    }
-    return self;
-}
 
 #pragma mark - UIView
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (void)layoutSubviews
 {
-    if (self = [super initWithFrame:frame]) {
-        [self initPrivate];
-    }
-    return self;
-}
-
-#pragma mark - Common Initialization
-
-- (void)initPrivate
-{
-    CGRect screenRect = self.bounds;
-    CGFloat dotCenterH = screenRect.size.width / 2;
-    CGFloat dotCenterV = screenRect.size.height / 2;
-
-    // Blue pulsing disc
-    UIView *pulseDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - DotHalfWidth, dotCenterV - DotHalfWidth, DotMaxWidth, DotMaxWidth)];
+    // Outer pulsing disc (blue)
+    UIView *pulseDisc = [[UIView alloc] initWithFrame:[self boundsByRatio:1.0]];
     pulseDisc.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
-    pulseDisc.layer.cornerRadius = DotHalfWidth;
+    pulseDisc.layer.cornerRadius = pulseDisc.bounds.size.width / 2;
 
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.duration = 3.0;
     scaleAnimation.repeatCount = HUGE_VAL;
-    //    scaleAnimation.autoreverses = YES;
     scaleAnimation.fromValue = [NSNumber numberWithFloat:0.3];
     scaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
     [pulseDisc.layer addAnimation:scaleAnimation forKey:@"scale"];
@@ -80,30 +48,41 @@ CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
     CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeAnimation.duration = 3.0;
     fadeAnimation.repeatCount = HUGE_VAL;
-    //    fadeAnimation.autoreverses = YES;
     fadeAnimation.fromValue = [NSNumber numberWithFloat:0.8];
     fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
     [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
 
     [self addSubview:pulseDisc];
 
-    // White middle disc
-    UIView *whiteDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - WhiteDiscHalfWidth, dotCenterV - WhiteDiscHalfWidth, WhiteDiscWidth, WhiteDiscWidth)];
-    whiteDisc.backgroundColor = [UIColor whiteColor];
-    whiteDisc.layer.cornerRadius = WhiteDiscHalfWidth;
-    whiteDisc.layer.shadowColor = [UIColor blackColor].CGColor;
-    whiteDisc.layer.shadowOffset = CGSizeZero;
-    whiteDisc.layer.shadowRadius = 5.0;
-    whiteDisc.layer.shadowOpacity = 0.5;
+    // Middle static disc (white)
+    CGFloat sizeRatio = 0.3;
+    UIView *middleDisc = [[UIView alloc] initWithFrame:[self boundsByRatio:sizeRatio]];
+    middleDisc.backgroundColor = [UIColor whiteColor];
+    middleDisc.layer.cornerRadius = middleDisc.bounds.size.width / 2;
+    middleDisc.layer.shadowColor = [UIColor blackColor].CGColor;
+    middleDisc.layer.shadowOffset = CGSizeZero;
+    middleDisc.layer.shadowRadius = 5.0;
+    middleDisc.layer.shadowOpacity = 0.5;
 
-    [self addSubview:whiteDisc];
+    [self addSubview:middleDisc];
 
-    // Blue dot
-    UIView *blueDot = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - BlueDotHalfWidth, dotCenterV - BlueDotHalfWidth, BlueDotMaxWidth, BlueDotMaxWidth)];
-    blueDot.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
-    blueDot.layer.cornerRadius = BlueDotHalfWidth;
+    // Center disc (blue)
+    sizeRatio = 0.2;
+    UIView *centerDisc = [[UIView alloc] initWithFrame:[self boundsByRatio:sizeRatio]];
+    centerDisc.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
+    centerDisc.layer.cornerRadius = centerDisc.bounds.size.width / 2;
 
-    [self addSubview:blueDot];
+    [self addSubview:centerDisc];
+}
+
+#pragma mark - Private Methods
+
+- (CGRect)boundsByRatio:(CGFloat)ratio
+{
+    return CGRectMake(self.center.x - (self.bounds.size.width / 2 * ratio),
+                      self.center.y - (self.bounds.size.height / 2 * ratio),
+                      self.bounds.size.width * ratio,
+                      self.bounds.size.height * ratio);
 }
 
 @end
