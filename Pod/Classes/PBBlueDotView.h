@@ -1,8 +1,8 @@
 //
-//  PBViewController.h
+//  PBBlueDotView.h
 //  BlueDot
 //
-//  Created by Ben Chatelain on 8/7/14.
+//  Created by Ben Chatelain on 8/8/14.
 //  Copyright (c) 2014 Ben Chatelain.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,6 +26,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PBViewController : UIViewController
+@interface PBBlueDotView : UIView
 
 @end

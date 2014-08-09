@@ -23,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A2245C4CB8AC4F3BA3759D10 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48159C5C6D184B54B57732B9 /* libPods-Tests.a */; };
 		F8C6C0751995D2D500D4AD40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C6C0721995D2D500D4AD40 /* AppDelegate.m */; };
-		F8C6C0761995D2D500D4AD40 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C6C0741995D2D500D4AD40 /* PBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +62,6 @@
 		B80FE491B6F940FA915A6393 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F8C6C0711995D2D500D4AD40 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C6C0721995D2D500D4AD40 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F8C6C0731995D2D500D4AD40 /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
-		F8C6C0741995D2D500D4AD40 /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +133,6 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				F8C6C0731995D2D500D4AD40 /* PBViewController.h */,
-				F8C6C0741995D2D500D4AD40 /* PBViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			path = BlueDot;
@@ -351,7 +346,6 @@
 			files = (
 				F8C6C0751995D2D500D4AD40 /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				F8C6C0761995D2D500D4AD40 /* PBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

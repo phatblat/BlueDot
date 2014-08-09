@@ -1,8 +1,8 @@
 //
-//  PBViewController.m
+//  PBBlueDotView.m
 //  BlueDot
 //
-//  Created by Ben Chatelain on 8/7/14.
+//  Created by Ben Chatelain on 8/8/14.
 //  Copyright (c) 2014 Ben Chatelain.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,7 +24,7 @@
 //  THE SOFTWARE.
 //
 
-#import "PBViewController.h"
+#import "PBBlueDotView.h"
 #import <QuartzCore/QuartzCore.h>
 
 CGFloat const DotMaxWidth = 100;
@@ -34,17 +34,33 @@ CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
 CGFloat const BlueDotMaxWidth = 20;
 CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
 
-@interface PBViewController ()
+@implementation PBBlueDotView
 
-@end
+#pragma mark - NSObject <NSCoder>
 
-@implementation PBViewController
-            
-- (void)viewDidLoad
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
-    [super viewDidLoad];
+    if (self = [super initWithCoder:coder]) {
+        [self initPrivate];
+    }
+    return self;
+}
 
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
+#pragma mark - UIView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self initPrivate];
+    }
+    return self;
+}
+
+#pragma mark - Common Initialization
+
+- (void)initPrivate
+{
+    CGRect screenRect = self.bounds;
     CGFloat dotCenterH = screenRect.size.width / 2;
     CGFloat dotCenterV = screenRect.size.height / 2;
 
@@ -69,7 +85,7 @@ CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
     fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
     [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
 
-    [self.view addSubview:pulseDisc];
+    [self addSubview:pulseDisc];
 
     // White middle disc
     UIView *whiteDisc = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - WhiteDiscHalfWidth, dotCenterV - WhiteDiscHalfWidth, WhiteDiscWidth, WhiteDiscWidth)];
@@ -80,14 +96,14 @@ CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
     whiteDisc.layer.shadowRadius = 5.0;
     whiteDisc.layer.shadowOpacity = 0.5;
 
-    [self.view addSubview:whiteDisc];
+    [self addSubview:whiteDisc];
 
     // Blue dot
     UIView *blueDot = [[UIView alloc] initWithFrame:CGRectMake(dotCenterH - BlueDotHalfWidth, dotCenterV - BlueDotHalfWidth, BlueDotMaxWidth, BlueDotMaxWidth)];
     blueDot.backgroundColor = [UIColor colorWithRed:0.16 green:0.55 blue:0.98 alpha:1];
     blueDot.layer.cornerRadius = BlueDotHalfWidth;
 
-    [self.view addSubview:blueDot];
+    [self addSubview:blueDot];
 }
 
 @end
