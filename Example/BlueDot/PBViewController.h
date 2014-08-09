@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PBViewController.h
 //  BlueDot
 //
 //  Created by Ben Chatelain on 8/7/14.
@@ -26,8 +26,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PBViewController : UIViewController
 
 @end
-

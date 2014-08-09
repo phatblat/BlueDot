@@ -2,7 +2,7 @@
 //  main.m
 //  BlueDot
 //
-//  Created by Ben Chatelain on 8/7/14.
+//  Created by Ben Chatelain on 08/08/2014.
 //  Copyright (c) 2014 Ben Chatelain.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,10 +24,11 @@
 //  THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import <UIKit/UIKit.h>
 
-int main(int argc, char * argv[]) {
+int main(int argc, char * argv[])
+{
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

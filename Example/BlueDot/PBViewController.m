@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  PBViewController.m
 //  BlueDot
 //
 //  Created by Ben Chatelain on 8/7/14.
@@ -24,7 +24,7 @@
 //  THE SOFTWARE.
 //
 
-#import "ViewController.h"
+#import "PBViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 CGFloat const DotMaxWidth = 100;
@@ -34,11 +34,11 @@ CGFloat const WhiteDiscHalfWidth = WhiteDiscWidth / 2;
 CGFloat const BlueDotMaxWidth = 20;
 CGFloat const BlueDotHalfWidth = BlueDotMaxWidth / 2;
 
-@interface ViewController ()
+@interface PBViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PBViewController
             
 - (void)viewDidLoad
 {
