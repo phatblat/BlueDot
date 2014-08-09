@@ -28,16 +28,16 @@
 /* Begin PBXFileReference section */
 		B5C8C0DF199435B900DBC048 /* BlueDot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueDot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C8C0E3199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C8C0E4199435B900DBC048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5C8C0E4199435B900DBC048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B5C8C0E6199435B900DBC048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B5C8C0E7199435B900DBC048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5C8C0E9199435B900DBC048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5C8C0EA199435B900DBC048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5C8C0E7199435B900DBC048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B5C8C0E9199435B900DBC048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B5C8C0EA199435B900DBC048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B5C8C0ED199435B900DBC048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5C8C0EF199435B900DBC048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5C8C0F5199435B900DBC048 /* BlueDotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueDotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C8C0FA199435B900DBC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C8C0FB199435B900DBC048 /* BlueDotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueDotTests.m; sourceTree = "<group>"; };
+		B5C8C0FB199435B900DBC048 /* BlueDotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BlueDotTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +160,9 @@
 		B5C8C0D7199435B900DBC048 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PB;
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Kaiser Permanente";
+				ORGANIZATIONNAME = "Ben Chatelain";
 				TargetAttributes = {
 					B5C8C0DE199435B900DBC048 = {
 						CreatedOnToolsVersion = 6.0;
