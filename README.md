@@ -7,7 +7,7 @@
 
 A self-animating view that mimics the current location dot in the iOS Maps app.
 
-![blue dot animation](https://imgflip.com/gif/azwxh "Logo Title Text 1")
+![blue dot animation](bluedot.gif)
 
 ## Usage
 
