@@ -41,15 +41,15 @@
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.duration = 3.0;
     scaleAnimation.repeatCount = HUGE_VAL;
-    scaleAnimation.fromValue = [NSNumber numberWithFloat:0.3];
-    scaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
+    scaleAnimation.fromValue = @(0.3);
+    scaleAnimation.toValue = @(1.0);
     [pulseDisc.layer addAnimation:scaleAnimation forKey:@"scale"];
 
     CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeAnimation.duration = 3.0;
     fadeAnimation.repeatCount = HUGE_VAL;
-    fadeAnimation.fromValue = [NSNumber numberWithFloat:0.8];
-    fadeAnimation.toValue = [NSNumber numberWithFloat:0.0];
+    fadeAnimation.fromValue = @(0.8);
+    fadeAnimation.toValue = @(0.0);
     [pulseDisc.layer addAnimation:fadeAnimation forKey:@"fade"];
 
     [self addSubview:pulseDisc];
