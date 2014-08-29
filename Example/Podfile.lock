@@ -1,19 +1,20 @@
 PODS:
-  - BlueDot (0.1.0)
+  - BlueDot (0.1.1)
   - Expecta (0.3.1)
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - BlueDot (from `../`)
+  - BlueDot (from `../BlueDot.podspec`)
+  - BlueDot (from `../BlueDot.podspec`)
   - Expecta
   - Specta (~> 0.2.1)
 
 EXTERNAL SOURCES:
   BlueDot:
-    :path: ../
+    :path: ../BlueDot.podspec
 
 SPEC CHECKSUMS:
-  BlueDot: 9c48470afbdef8745cebccb602c32d805a7033a0
+  BlueDot: 6a60ac2048fca06edf23f0137ad16ce142da109a
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 

@@ -1,9 +1,9 @@
 target 'BlueDot', :exclusive => true do
-  pod "BlueDot", :path => "../"
+  pod "BlueDot", :podspec => "../BlueDot.podspec"
 end
 
 target 'Tests', :exclusive => true do
-  pod "BlueDot", :path => "../"
+  pod "BlueDot", :podspec => "../BlueDot.podspec"
 
   pod 'Specta', '~> 0.2.1'
   pod 'Expecta'
