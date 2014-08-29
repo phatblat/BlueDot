@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A2245C4CB8AC4F3BA3759D10 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48159C5C6D184B54B57732B9 /* libPods-Tests.a */; };
+		B59CC66A19B0D8AC0069A1E1 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59CC66919B0D8AC0069A1E1 /* PBViewController.m */; };
 		F8C6C0751995D2D500D4AD40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C6C0721995D2D500D4AD40 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		A333307D60794E95B2C6B327 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B59CC66819B0D8AC0069A1E1 /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		B59CC66919B0D8AC0069A1E1 /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
 		B80FE491B6F940FA915A6393 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F8C6C0711995D2D500D4AD40 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C6C0721995D2D500D4AD40 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
+				B59CC66819B0D8AC0069A1E1 /* PBViewController.h */,
+				B59CC66919B0D8AC0069A1E1 /* PBViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			path = BlueDot;
@@ -345,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C6C0751995D2D500D4AD40 /* AppDelegate.m in Sources */,
+				B59CC66A19B0D8AC0069A1E1 /* PBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
