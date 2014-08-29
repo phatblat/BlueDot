@@ -79,8 +79,10 @@
 
 - (CGRect)boundsByRatio:(CGFloat)ratio
 {
-    return CGRectMake(self.center.x - (self.bounds.size.width / 2 * ratio),
-                      self.center.y - (self.bounds.size.height / 2 * ratio),
+    CGPoint boundsCenter = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
+
+    return CGRectMake(boundsCenter.x - (self.bounds.size.width / 2 * ratio),
+                      boundsCenter.y - (self.bounds.size.height / 2 * ratio),
                       self.bounds.size.width * ratio,
                       self.bounds.size.height * ratio);
 }
