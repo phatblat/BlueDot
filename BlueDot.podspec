@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BlueDot"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A self-animating view that mimics the current location dot in the iOS Maps app."
   s.description      = <<-DESC
                        A QuartzCore experiment that yielded something very similar to the animated current location dot from Maps.
