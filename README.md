@@ -28,4 +28,5 @@ Ben Chatelain, benchatelain@gmail.com
 
 ## License
 
-BlueDot is available under the MIT license. See the LICENSE file for more info.
+BlueDot is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for rights and limitations.
+
